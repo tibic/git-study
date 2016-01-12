@@ -2,14 +2,17 @@
 
 #### 关于feather-ui2.0
 
-feather-ui基于jquery/zepto。
-feather-ui兼容模块化和传统方式引入使用，非模块下需要按需前加载依赖。
-和dom相关的组件被绑定至$.fn上,可以使用这样的方式调用组件：
-> $('#droplist').droplist({
->	//初始化参数
-> });
+* feather-ui基于jquery/zepto。
+* feather-ui兼容模块化和传统方式引入使用，非模块下需要按需前加载依赖。
+* 和dom相关的组件被绑定至$.fn上,可以使用这样的方式调用组件：
 
-##### 注
+`
+$('#droplist').droplist({
+	//初始化参数
+});
+`
+
+##### 注:
 
 ###### 什么事fn？
 > jQuery.fn = jQuery.prototype ={ 
