@@ -29,17 +29,20 @@ $.fn是指jquery的命名空间，加上fn上的方法及属性，会对jquery�
 #### jQuery为开发插件提拱了两个方法，分别是：
 
 * jQuery.extend(object);为扩展jQuery类本身，为类添加新的方法，之后便可以在引入jQuery的地方，使用这个方法了。 
-	如:  
-    
+	如:
+
+```   
 	$.extend({ 
 	　　add:function(a,b){returna+b;} 
 		}); 
 	$.add(3,4); //return 7 
+```
+
 
 * jQuery.fn.extend(object);给jQuery对象添加方法，就是为jQuery类添加“成员函数”。jQuery类的实例可以使用这个“成员函数”。
 	如：    
     
-    
+```
     $.fn.extend({ 
     	alertWhileClick:function(){ 
     		$(this).click(function(){ 
@@ -49,7 +52,7 @@ $.fn是指jquery的命名空间，加上fn上的方法及属性，会对jquery�
     }); 
     
 	$("#test").alertWhileClick(); //页面上为：<input id="test" type="text"/>
-
+```
 
 #### 注意
 
@@ -62,24 +65,24 @@ $.fn是指jquery的命名空间，加上fn上的方法及属性，会对jquery�
 
 * 如果想调用组件自身的方法时，只需要调用组件名，第一个参数为执行的方法名，后续参数传入即可，如:
 
-
+```
     $('#droplist').droplist('open')  // => jquery object
     $('#droplist').droplist('on', 'select', function(event, value){
         console.log(value);
     });
-
+```
 
 * 也可以直接通过instance魔术方法，获取组件实例化对象
 
-
+```
     $('#droplist').droplist('instance')/* => DropList Object*/.getValue(); 		// => 123
-
+```
 
 * 实例化对象可以通过widget方法，获取绑定的jquery对象
 
-
+```
     $('#droplist').droplist('instance').widget().droplist('open') //=> jquery object
-	
+```
 
 * 和dom相关的组件都支持事件功能，以往使用options传递回调函数的方式也变成了事件的方式，比如：
 
