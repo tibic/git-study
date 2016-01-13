@@ -1,5 +1,12 @@
 <?php $this->component('common:header');?>
+
+<link rel="stylesheet" href="/static/bootstrap-3.3.5/bootstrap.css" type="text/css">
 <link rel="stylesheet" href="/static/dialog/dialog.css" type="text/css">
 
-<div class="dialog">我是弹出框</div>
+<button type="button" id="dialog" class="btn btn-default">我是弹窗</button>
 
+<span id="abc">点我</span>
+
+<script type="text/javascript">
+    require.async('/static/dialog/dialog.js');
+</script>
