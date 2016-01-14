@@ -1,5 +1,26 @@
-.dialog{
+.example_1,.example_2{
 	background: #dbdbdb;
 	width: 500px;
 	height: 300px;
+}
+.dialog2{
+	width: 500px;
+	height: 200px;
+	background: #dbdbdb;
+	text-align: center;
+	.ui2-dialog-header a{
+		float: right;
+		right: 20px;
+		position: absolute;
+	}
+	.dialog2_title {
+		border-bottom: 1px solid #999999;
+	}
+	.dialog2_cont {
+		height: 100px;
+	}
+	.dialog2_footer{
+		border-top: 1px solid #999999;
+		padding-top: 10px;
+	}
 }

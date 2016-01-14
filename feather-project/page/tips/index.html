@@ -1,0 +1,13 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/tips/tips.css" type="text/css">
+
+<h3>Tips</h3>
+<!-- Standard button -->
+<button type="button" id="start" class="btn btn-default">点击开始</button>
+
+<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
+<button type="button" id="end" class="btn btn-primary">点击结束</button>
+
+<script type="text/javascript">
+    require.async('/static/tips/tips.js');
+</script>

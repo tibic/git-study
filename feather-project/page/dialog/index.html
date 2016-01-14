@@ -1,11 +1,63 @@
 <?php $this->component('common:header');?>
-
-<link rel="stylesheet" href="/static/bootstrap-3.3.5/bootstrap.css" type="text/css">
 <link rel="stylesheet" href="/static/dialog/dialog.css" type="text/css">
 
-<button type="button" id="dialog" class="btn btn-default">我是弹窗</button>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#case1" aria-controls="case1" role="tab" data-toggle="tab">例子1</a></li>
+    <li role="presentation"><a href="#case2" aria-controls="case2" role="tab" data-toggle="tab">例子2</a></li>
+    <li role="presentation"><a href="#case3" aria-controls="case3" role="tab" data-toggle="tab">例子3</a></li>
+    <li role="presentation"><a href="#case4" aria-controls="case4" role="tab" data-toggle="tab">例子4</a></li>
+</ul>
 
-<span id="abc">点我</span>
+<!-- Tab panes -->
+<div class="tab-content">
+<!-- case1 -->
+    <div role="tabpanel" class="tab-pane active" id="case1">
+        <h4>例1：基本的dialog：使用handle触发dialog，弹框放在约束的容器里</h4>
+        <div class="example_1" id="example_1">
+        	<button type="button" id="button1" class="btn btn-default">点我弹窗</button>
+        	<div id="dialog1"></div>
+            <div class="text" id="text1">
+                我是html设置的内容
+            </div>
+        </div>
+    </div>
+
+<!-- case2 -->
+    <div role="tabpanel" class="tab-pane" id="case2">
+        <h4>例2：自定义的dialog：通过绑定事件触发dialog，同时可以自定义dialog</h4>
+    	<button type="button" id="button2" class="btn btn-default">点我弹窗</button>
+        <div id="dialog2" class="ui2-dialog-wraper dialog2">
+            <strong class="ui2-dialog-header">
+		        <a href="javascript:void(0);" class="ui2-dialog-close">&times;</a>
+		        <h5 class="ui2-dialog-title dialog2_title">例子2标题</h5>
+		    </strong>
+            <div class="ui2-dialog-content dialog2_cont">这里是自定义的内容区</div>
+            <div class="ui2-dialog-buttons dialog2_footer">
+            	<button class="btn btn-default" id="dialog_close">关闭</button>
+            </div>
+        </div>
+    </div>
+
+<!-- case3 -->
+    <div role="tabpanel" class="tab-pane" id="case3">
+        <h4>例3：介绍dialog相关api的用法</h4>
+        <button id="button3" class="btn btn-default">点我弹窗</button>
+        <div id="dialog3"></div>
+    </div>
+
+<!-- case4 -->
+    <div role="tabpanel" class="tab-pane" id="case4">
+        <h4>例4：介绍dialog的url用法</h4>
+        <button id="button4" class="btn btn-default">点我弹窗</button>
+        <div id="dialog4"></div>
+    </div>
+</div>
+
+
+
+
+
 
 <script type="text/javascript">
     require.async('/static/dialog/dialog.js');
