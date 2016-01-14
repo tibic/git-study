@@ -1,0 +1,32 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/mask/mask.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#mask1" aria-controls="mask1" role="tab" data-toggle="tab">mask1</a></li>
+    <li role="presentation"><a href="#mask2" aria-controls="mask2" role="tab" data-toggle="tab">mask2</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="mask1">
+        <h3>mask：基本的mask</h3>
+        <button type="button" id="start" class="btn btn-default">点击开始</button>
+        <button type="button" id="end" class="btn btn-default">点击关闭</button>
+        <div class="mask"></div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="mask2">
+    	<h3>mask：配置参数的mask</h3>
+        <button type="button" id="start2" class="btn btn-default">点击开始</button>
+        <button type="button" id="end2" class="btn btn-default">点击关闭</button>
+        <div class="mask2"></div>
+    </div>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+    require.async('/static/mask/mask.js');
+</script>

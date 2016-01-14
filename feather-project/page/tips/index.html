@@ -1,12 +1,32 @@
 <?php $this->component('common:header');?>
 <link rel="stylesheet" href="/static/tips/tips.css" type="text/css">
 
-<h3>Tips</h3>
-<!-- Standard button -->
-<button type="button" id="start" class="btn btn-default">点击开始</button>
 
-<!-- Provides extra visual weight and identifies the primary action in a set of buttons -->
-<button type="button" id="end" class="btn btn-primary">点击结束</button>
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#tip1" aria-controls="tip1" role="tab" data-toggle="tab">tip1</a></li>
+    <li role="presentation"><a href="#tip2" aria-controls="tip2" role="tab" data-toggle="tab">tip2</a></li>
+    <li role="presentation"><a href="#tip3" aria-controls="tip3" role="tab" data-toggle="tab">tip3</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="tip1">
+        <h3>Tips：基本的Tips提示框</h3>
+        <button type="button" id="start" class="btn btn-default">点击开始</button>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tip2">
+    	<h3>Tips：配置参数的Tips提示框</h3>
+        <button type="button" id="start2" class="btn btn-default">点击开始</button>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tip3">
+    	<h3>Tips：配置参数的Tips提示框,只有show时才显示className</h3>
+        <button type="button" id="start3" class="btn btn-default">点击开始</button>
+    </div>
+</div>
+
+
+
+
 
 <script type="text/javascript">
     require.async('/static/tips/tips.js');
