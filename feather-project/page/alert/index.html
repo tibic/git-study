@@ -1,0 +1,31 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/alert/alert.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#alert1" aria-controls="alert1" role="tab" data-toggle="tab">alert1</a></li>
+    <li role="presentation"><a href="#alert2" aria-controls="alert2" role="tab" data-toggle="tab">alert2</a></li>
+    <li role="presentation"><a href="#alert3" aria-controls="alert3" role="tab" data-toggle="tab">alert3</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="alert1">
+        <h3>alert: 基本的alert</h3>
+        <button type="button" id="start" class="btn btn-default">点击开始</button>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="alert2">
+    	<h3>alert：配置参数的alert</h3>
+        <button type="button" id="start2" class="btn btn-default">点击开始</button>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="alert3">
+    	<h3>alert</h3>
+        <button type="button" id="start3" class="btn btn-default">点击开始</button>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    require.async('/static/alert/alert.js');
+</script>
