@@ -1,0 +1,17 @@
+#tab-btns,#tab-btns2{
+	a{
+		display: inline-block;
+		padding: 5px 20px;
+		text-align: center;
+		border: 1px solid #999999;
+	}
+}
+
+#tab1,#tab2,#tab3,#tab1_1,#tab2_2,#tab3_3{
+	width: 300px;
+	height: 200px;
+	background: #dbdbdb;
+}
+
+
+

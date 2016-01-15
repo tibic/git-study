@@ -1,0 +1,46 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/tabs/tabs.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#tabs_1" aria-controls="tabs_1" role="tab" data-toggle="tab">tabs_1</a></li>
+    <li role="presentation"><a href="#tabs_2" aria-controls="tabs_2" role="tab" data-toggle="tab">tabs_2</a></li>
+    <li role="presentation"><a href="#tabs_3" aria-controls="tabs_3" role="tab" data-toggle="tab">tabs_3</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="tabs_1">
+        <h3>tabs: 基本的tabs</h3>
+        <div id="tab-btns">
+            <a href="#tab1" data-target="tab1">tab1</a>
+            <a href="#tab2" data-target="tab2">tab2</a>
+            <a href="#tab3" data-target="tab3">tab3</a>
+        </div>
+
+        <div id="tab1">tab1</div>
+        <div id="tab2">tab2</div>
+        <div id="tab3">tab3</div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tabs_2">
+    	<h3>tabs：点击切换标签页</h3>
+        <div id="tab-btns2">
+            <a href="#tab1_1" data-target2="tab1_1">tab1</a>
+            <a href="#tab2_2" data-target2="tab2_2">tab2</a>
+            <a href="#tab3_3" data-target2="tab3_3">tab3</a>
+        </div>
+
+        <div id="tab1_1">tab1</div>
+        <div id="tab2_2">tab2</div>
+        <div id="tab3_3">tab3</div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tabs_3">
+    	<h3>tabs</h3>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    require.async('/static/tabs/tabs.js');
+</script>
