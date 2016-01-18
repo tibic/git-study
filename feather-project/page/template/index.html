@@ -1,0 +1,39 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/template/template.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#tpl1" aria-controls="tpl1" role="tab" data-toggle="tab">tpl1</a></li>
+    <li role="presentation"><a href="#tpl2" aria-controls="tpl2" role="tab" data-toggle="tab">tpl2</a></li>
+    <li role="presentation"><a href="#tpl3" aria-controls="tpl3" role="tab" data-toggle="tab">tpl3</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="tpl1">
+        <h3>tpl: 基本的tpl</h3>
+        <button type="button" id="start" class="btn btn-default">点击开始</button>
+        <div id="tpl_one"></div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tpl2">
+    	<h3>tpl：另一种模板用法</h3>
+        <button type="button" id="start2" class="btn btn-default">点击开始</button>
+        <div id="tpl_two"></div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tpl3">
+    	<h3>tpl：还有一种用法</h3>
+        <button type="button" id="start3" class="btn btn-default">点击开始</button>
+        <div id="tpl_three_cont"></div>
+    	<script type="text/html" id="tpl_three">
+			<%list.forEach(function(item){%>
+			<p><%=item.name%></p>
+			<%});%>
+		</script>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    require.async('/static/template/template.js');
+</script>

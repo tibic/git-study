@@ -1,4 +1,4 @@
-#tab-btns,#tab-btns2{
+#tab-btns,#tab-btns2,#tab-btns3{
 	a{
 		display: inline-block;
 		padding: 5px 20px;
@@ -7,11 +7,9 @@
 	}
 }
 
-#tab1,#tab2,#tab3,#tab1_1,#tab2_2,#tab3_3{
+#tab1,#tab2,#tab3,#tab2_1,#tab2_2,#tab2_3,#tab3_1,#tab3_2,#tab3_3{
 	width: 300px;
 	height: 200px;
 	background: #dbdbdb;
 }
-
-
 
