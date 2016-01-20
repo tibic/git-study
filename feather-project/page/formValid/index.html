@@ -1,0 +1,66 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/formValid/formValid.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#tabs_1" aria-controls="tabs_1" role="tab" data-toggle="tab">tabs_1</a></li>
+    <li role="presentation"><a href="#tabs_2" aria-controls="tabs_2" role="tab" data-toggle="tab">tabs_2</a></li>
+    <li role="presentation"><a href="#tabs_3" aria-controls="tabs_3" role="tab" data-toggle="tab">tabs_3</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="tabs_1">
+        <h3>例子1：基本的验证</h3>
+        <form action="" id="formvalid_1">
+            <div>
+                <input type="text" name="testName" data-formvalid-default="请输入姓名">
+            </div><br/>
+            <div>
+                <input type="text" name="testCard" data-formvalid-default="请输入银行卡号">
+            </div><br/>
+            <div>
+            <input type="text" name="testNumber" data-formvalid-default="请输入手机号码">
+            </div><br/>
+            <button id="submit" type="submit" class="btn">提交</button>
+        </form>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tabs_2">
+        <h3>例子2：另外一种写法</h3>
+        <form action="" id="formvalid-test">
+            <div>
+                <input type="text" name="testName_2" data-formvalid-default="请输入姓名">
+            </div><br/>
+            <div>
+                <input type="text" name="testCard_2" data-formvalid-default="请输入银行卡号">
+            </div><br/>
+            <div>
+            <input type="text" name="testNumber_2" data-formvalid-default="请输入手机号码">
+            </div><br/>
+            <button id="submit_2" class="btn">提交</button>
+        </form>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="tabs_3">
+        <h3>例子3：API使用实例,reset不会使用</h3>
+        <form action="" id="formvalid-test-3">
+            <div>
+                <input type="text" name="testName_3" data-formvalid-default="请输入姓名">
+            </div><br/>
+            <div>
+                <input type="text" name="testCard_3" data-formvalid-default="请输入银行卡号">
+            </div><br/>
+            <div>
+            <input type="text" name="testNumber_3" data-formvalid-default="请输入手机号码"
+            data-formvalid-number data-formvalid-length="11" data-formvalid-length-error="手机号码必须为11数字" data-formvalid-length-success="手机号码正确">
+            </div><br/>
+            <button id="submit_3" class="btn">提交</button>
+        </form>
+    </div>
+    
+</div>
+
+
+
+<script type="text/javascript">
+    require.async('/static/formValid/formValid.js');
+</script>

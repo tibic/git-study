@@ -1,0 +1,26 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/pager/pager.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#pager1" aria-controls="pager1" role="tab" data-toggle="tab">pager1</a></li>
+    <li role="presentation"><a href="#pager2" aria-controls="pager2" role="tab" data-toggle="tab">pager2</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="pager1">
+        <h3>pager</h3>
+        <button type="button" id="start" class="btn"></button>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="pager2">
+    	<h3>pager</h3>
+        <button type="button" id="start2" class="btn"></button>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    require.async('/static/pager/pager.js');
+</script>

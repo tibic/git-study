@@ -1,0 +1,33 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/util/util.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#util1" aria-controls="util1" role="tab" data-toggle="tab">util1</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="util1">
+        <h4>为数字1111添加千分位<button type="button" id="start" class="btn btn-default"></button></h4>
+        <h4>为数字1.2转整数<button type="button" id="start2" class="btn btn-default"></button></h4>
+
+        <h4>给s填补3个e<button type="button" id="start3" class="btn btn-default"></button></h4>
+        <h4>将字符串中的换行换成html的换行<button type="button" id="start4" class="btn btn-default"></button></h4>
+        
+        <h4>......</h4>
+
+        <h4>获取当前时间戳<button type="button" id="start5" class="btn btn-default"></button></h4>
+        <h4>获取当前时间<button type="button" id="start6" class="btn btn-default"></button></h4>
+        <h4>设置对象<button type="button" id="start7" class="btn btn-default"></button></h4>
+        
+    </div>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+    require.async('/static/util/util.js');
+</script>
