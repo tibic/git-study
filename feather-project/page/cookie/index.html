@@ -1,0 +1,20 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/cookie/cookie.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#cookie1" aria-controls="cookie1" role="tab" data-toggle="tab">cookie</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="cookie1">
+        <h3>cookie: api操作</h3>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    require.async('/static/cookie/cookie.js');
+</script>

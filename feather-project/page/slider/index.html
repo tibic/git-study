@@ -1,0 +1,36 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/slider/slider.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#slider1" aria-controls="slider1" role="tab" data-toggle="tab">slider</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="slider1">
+        <div id="slide-test-easing-container">
+			<div id="slide-test-easing">
+			    <p data-slide-clone="">1234</p>
+			    <p data-slide-clone="">5678</p>
+			    <p data-slide-clone="">abcd</p>
+			    <p data-slide-clone="">xzwd</p>
+			    <p>1234</p>
+			    <p>5678</p>
+			    <p>abcd</p>
+			    <p>xzwd</p>
+			    <p data-slide-clone="">1234</p>
+			    <p data-slide-clone="">5678</p>
+			    <p data-slide-clone="">abcd</p>
+			    <p data-slide-clone="">xzwd</p>
+			</div>
+		</div>
+
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    require.async('/static/slider/slider.js');
+</script>

@@ -1,0 +1,26 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/placeholder/placeholder.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#placeholder1" aria-controls="placeholder1" role="tab" data-toggle="tab">placeholder1</a></li>
+    <li role="presentation"><a href="#placeholder2" aria-controls="placeholder2" role="tab" data-toggle="tab">placeholder2</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="placeholder1">
+        <h3>placeholder: 它的api-destroy不会用</h3>
+        <input type="text" id="username1" name="username"/>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="placeholder2">
+    	<h3>placeholder</h3>
+        <input type="text" id="username2" name="username"/>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    require.async('/static/placeholder/placeholder.js');
+</script>
