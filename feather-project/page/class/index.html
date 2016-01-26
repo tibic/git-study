@@ -1,36 +1,29 @@
 <?php $this->component('common:header');?>
-<link rel="stylesheet" href="/static/slider/slider.css" type="text/css">
+<link rel="stylesheet" href="/static/class/class.css" type="text/css">
 
 
 <!-- Nav tabs -->
 <ul class="nav nav-tabs" role="tablist">
-    <li role="presentation" class="active"><a href="#slider1" aria-controls="slider1" role="tab" data-toggle="tab">slider</a></li>
+    <li role="presentation" class="active"><a href="#class1" aria-controls="class1" role="tab" data-toggle="tab">class1</a></li>
+    <li role="presentation"><a href="#class2" aria-controls="class2" role="tab" data-toggle="tab">class2</a></li>
+    <li role="presentation"><a href="#class3" aria-controls="class3" role="tab" data-toggle="tab">class3</a></li>
+
 </ul>
 <!-- Tab panes -->
 <div class="tab-content">
-    <div role="tabpanel" class="tab-pane active" id="slider1">
-        <div id="slide-test-easing-container">
-			<div id="slide-test-easing">
-			    <p>1</p>
-			    <p>2</p>
-			    <p>3</p>
-			    <p>4</p>
-			    <p>5</p>
-			    <p>6</p>
-			    <p>7</p>
-			    <p>8</p>
-			    <p>9</p>
-			    <p>10</p>
-			    <p>11</p>
-			    <p>12</p>
-			</div>
-		</div>
-
+    <div role="tabpanel" class="tab-pane active" id="class1">
+		<h4>class：创建一个类A</h4>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="class2">
+		<h4>class：继承一个类</h4>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="class3">
+		<h4>class：</h4>
     </div>
 </div>
 
 
 
 <script type="text/javascript">
-    require.async('/static/slider/slider.js');
+    require.async('/static/class/class.js');
 </script>

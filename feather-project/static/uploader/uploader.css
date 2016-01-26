@@ -1,0 +1,9 @@
+.but_class{
+	width: 100px;
+	height: 50px;
+	display: inline-block;
+	background: #999999;
+	color: #FFFFFF;
+	text-align: center;
+	border-radius: 5px;
+}

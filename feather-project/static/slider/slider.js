@@ -5,7 +5,7 @@ require.async([
 ], function($,bootstrap,Slider) {
 
 	// 例子1
-	var slide = new Slider({
+	var slider = new Slider({
 		time: 500,
 		dom: '#slide-test-easing',
 		noGap: true,
@@ -14,11 +14,11 @@ require.async([
 	});
 
 	setInterval(function(){
-	    slide.toNext();
+	    slider.toNext();
 	}, 300);
 
-	$('#slide-test-easing').on('slider:after', function(){
-	    alert(123);
-	});
+	// $('#slide-test-easing').on('slider:before',function(){
+	// 	alert(123);
+	// });
 
 });

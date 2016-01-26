@@ -1,0 +1,31 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/uploader/uploader.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#uploader1" aria-controls="uploader1" role="tab" data-toggle="tab">uploader1</a></li>
+    <li role="presentation"><a href="#uploader2" aria-controls="uploader2" role="tab" data-toggle="tab">uploader2</a></li>
+    <li role="presentation"><a href="#uploader3" aria-controls="uploader3" role="tab" data-toggle="tab">uploader3</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="uploader1">
+        <h3>uploader</h3>
+        <div id="start"></div>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="uploader2">
+    	<h3>uploader</h3>
+    </div>
+    <div role="tabpanel" class="tab-pane" id="uploader3">
+    	<h3>uploader</h3>
+    </div>
+</div>
+
+
+
+
+
+<script type="text/javascript">
+    require.async('/static/uploader/uploader.js');
+</script>
