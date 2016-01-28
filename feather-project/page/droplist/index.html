@@ -1,0 +1,21 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/droplist/droplist.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#droplist" aria-controls="droplist" role="tab" data-toggle="tab">droplist</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="droplist">
+		<h4>droplist</h4>
+        <div id="cont">
+        	<div id="start"></div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    require.async('/static/droplist/droplist.js');
+</script>

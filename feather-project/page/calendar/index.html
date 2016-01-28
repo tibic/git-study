@@ -1,0 +1,23 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/calendar/calendar.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#calendar1" aria-controls="calendar1" role="tab" data-toggle="tab">calendar1</a></li>
+
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="calendar1">
+		<h4>calendar1</h4>
+        <div class="calendar_cont"></div>
+        <input type="text" id="start">
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    require.async('/static/calendar/calendar.js');
+</script>

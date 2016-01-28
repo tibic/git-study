@@ -1,0 +1,32 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/suggestion/suggestion.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#suggestion" aria-controls="suggestion" role="tab" data-toggle="tab">suggestion1</a></li>
+	<li role="presentation"><a href="#calendar2" aria-controls="calendar2" role="tab" data-toggle="tab">suggestion2</a></li>
+	<li role="presentation"><a href="#calendar3" aria-controls="calendar3" role="tab" data-toggle="tab">suggestion3</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="calendar1">
+		<h4>suggestion1</h4>
+        <div class="calendar_cont"></div>
+        <input type="text" id="start">
+    </div>
+    <div role="tabpanel" class="tab-pane" id="calendar2">
+		<h4>suggestion2</h4>
+        <div class="calendar_cont"></div>
+        <input type="text" id="start2">
+    </div>
+    <div role="tabpanel" class="tab-pane" id="calendar3">
+		<h4>suggestion3</h4>
+        <div class="calendar_cont"></div>
+        <input type="text" id="start3">
+    </div>
+</div>
+
+<script type="text/javascript">
+    require.async('/static/suggestion/suggestion.js');
+</script>

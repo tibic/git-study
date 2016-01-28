@@ -1,0 +1,21 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/tooltip/tooltip.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#tooltip" aria-controls="tooltip" role="tab" data-toggle="tab">tooltip</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="tooltip">
+		<h4>tooltip</h4>
+        <div id="start">
+            <button class="btn" id="start_hover">hover显示气泡</button>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    require.async('/static/tooltip/tooltip.js');
+</script>
