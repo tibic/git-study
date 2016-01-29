@@ -1,3 +1,6 @@
+学习feather前端模块化组件库2.0
+
+=======================
 [Dialog](feather-project/page/dialog/dialog.md)&emsp;
 [Tips](feather-project/page/tips/tips.md)&emsp;
 [Mask](feather-project/page/mask/mask.md)&emsp;
@@ -19,7 +22,7 @@
 [Tooltip](feather-project/page/tooltip/tooltip.md)&emsp;
 [Droplist](feather-project/page/droplist/droplist.md)
 
-# 学习feather前端模块化组件库2.0
+=======================
 
 #### 关于feather-ui2.0
 
