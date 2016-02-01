@@ -1,27 +1,27 @@
-# 学习feather前端模块化组件库2.0
+学习feather前端模块化组件库2.0
+====================
+[Dialog](feather-project/page/dialog/dialog.md)&emsp;
+[Tips](feather-project/page/tips/tips.md)&emsp;
+[Mask](feather-project/page/mask/mask.md)&emsp;
+[Alert](feather-project/page/alert/alert.md)&emsp;
+[Tabs](feather-project/page/tabs/tabs.md)&emsp;
+[Template](feather-project/page/template/template.md)&emsp;
+[FormValid](feather-project/page/formValid/formValid.md)&emsp;
+[Util](feather-project/page/util/util.md)&emsp;
+[mask](feather-project/page/mask/mask.md)&emsp;
+[Pager](feather-project/page/pager/pager.md)&emsp;
+[PlaceHolder](feather-project/page/placeholder/placeholder.md)&emsp;
+[Cookie](feather-project/page/cookie/cookie.md)&emsp;
+[Slider](feather-project/page/slider/slider.md)&emsp;
+[Class](feather-project/page/class/class.md)&emsp;
+[Uploader](feather-project/page/uploader/uploader.md)&emsp;
+[LightBox](feather-project/page/lightbox/lightbox.md)&emsp;
+[Calendar](feather-project/page/calendar/calendar.md)&emsp;
+[Suggestion](feather-project/page/suggestion/suggestion.md)&emsp;
+[Tooltip](feather-project/page/tooltip/tooltip.md)&emsp;
+[Droplist](feather-project/page/droplist/droplist.md)
+
 =======================
-
-[Dialog](feather-project/page/dialog.md)，
-[Tips](http://feather-team.github.io/)，
-[Mask](http://feather-team.github.io/)，
-[Alert](http://feather-team.github.io/)，
-[Tabs](http://feather-team.github.io/)，
-[Template](http://feather-team.github.io/)，
-[FormValid](http://feather-team.github.io/)，
-[Util](http://feather-team.github.io/)，
-[Pager](http://feather-team.github.io/)，
-[PlaceHolder](http://feather-team.github.io/)，
-[Cookie](http://feather-team.github.io/)，
-[Slider](http://feather-team.github.io/)，
-[Class](http://feather-team.github.io/)，
-[Uploader](http://feather-team.github.io/)，
-[LightBox](http://feather-team.github.io/)，
-[Calendar](http://feather-team.github.io/)，
-[Suggestion](http://feather-team.github.io/)，
-[Tooltip](http://feather-team.github.io/)，
-[Droplist](http://feather-team.github.io/)
-
-# 学习feather前端模块化组件库2.0
 
 #### 关于feather-ui2.0
 
