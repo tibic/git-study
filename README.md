@@ -1,23 +1,25 @@
-[Dialog](feather-project/page/dialog/dialog.md)，
-[Tips](feather-project/page/tips/tips.md)，
-[Mask](feather-project/page/mask/mask.md)，
-[Alert](feather-project/page/alert/alert.md)，
-[Tabs](feather-project/page/tabs/tabs.md)，
-[Template](feather-project/page/template/template.md)，
-[FormValid](feather-project/page/formValid/formValid.md)，
-[Util](feather-project/page/util/util.md)，
-[mask](feather-project/page/mask/mask.md)，
-[Pager](feather-project/page/pager/pager.md)，
-[PlaceHolder](feather-project/page/placeholder/placeholder.md)，
-[Cookie](feather-project/page/cookie/cookie.md)，
-[Slider](feather-project/page/slider/slider.md)，
-[Class](feather-project/page/class/class.md)，
-[Uploader](feather-project/page/uploader/uploader.md)，
-[LightBox](feather-project/page/lightbox/lightbox.md)，
-[Calendar](feather-project/page/calendar/calendar.md)，
-[Suggestion](feather-project/page/suggestion/suggestion.md)，
-[Tooltip](feather-project/page/tooltip/tooltip.md)，
-[Droplist](feather-project/page/droplist/droplist.md)
+# 学习feather前端模块化组件库2.0
+=======================
+
+[Dialog](feather-project/page/dialog.md)，
+[Tips](http://feather-team.github.io/)，
+[Mask](http://feather-team.github.io/)，
+[Alert](http://feather-team.github.io/)，
+[Tabs](http://feather-team.github.io/)，
+[Template](http://feather-team.github.io/)，
+[FormValid](http://feather-team.github.io/)，
+[Util](http://feather-team.github.io/)，
+[Pager](http://feather-team.github.io/)，
+[PlaceHolder](http://feather-team.github.io/)，
+[Cookie](http://feather-team.github.io/)，
+[Slider](http://feather-team.github.io/)，
+[Class](http://feather-team.github.io/)，
+[Uploader](http://feather-team.github.io/)，
+[LightBox](http://feather-team.github.io/)，
+[Calendar](http://feather-team.github.io/)，
+[Suggestion](http://feather-team.github.io/)，
+[Tooltip](http://feather-team.github.io/)，
+[Droplist](http://feather-team.github.io/)
 
 # 学习feather前端模块化组件库2.0
 

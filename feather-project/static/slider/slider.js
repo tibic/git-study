@@ -6,10 +6,9 @@ require.async([
 
 	// 例子1
 	var slider = new Slider({
-		time: 500,
+		time: 1000,
 		dom: '#slide-test-easing',
 		noGap: true,
-		easing: 'linear',
 		mode: 'vertical'
 	});
 
@@ -20,5 +19,6 @@ require.async([
 	// $('#slide-test-easing').on('slider:before',function(){
 	// 	alert(123);
 	// });
+	
 
 });

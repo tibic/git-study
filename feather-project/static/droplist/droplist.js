@@ -7,8 +7,8 @@ require.async([
     // 例1
     new Droplist({
         dom:'#start',
-        container: '#cont',
-        list: {
+        // container: '#cont',
+        items: {
             "北京":"1",
             "上海":"2",
             "深圳":"3"

@@ -1,0 +1,23 @@
+<?php $this->component('common:header');?>
+<link rel="stylesheet" href="/static/draggable/draggable.css" type="text/css">
+
+
+<!-- Nav tabs -->
+<ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#draggable1" aria-controls="draggable1" role="tab" data-toggle="tab">draggable1</a></li>
+</ul>
+<!-- Tab panes -->
+<div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="draggable1">
+		<h4>draggable1</h4>
+        <div id="draggable">
+            <div id="start">拖拽我</div>
+        </div>
+    </div>
+</div>
+
+
+
+<script type="text/javascript">
+    require.async('/static/draggable/draggable.js');
+</script>
