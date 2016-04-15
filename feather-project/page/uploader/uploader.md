@@ -72,6 +72,25 @@ Uploader组件是基于uploadify插件2次开发的组件，提供用户更好�
     });
 ```
 
+```js
+    $('#uploader').uploader({
+        uploader: pageConfig.upImgUrl,
+        buttonClass: 'upload_button',
+        buttonText: '上传',
+        fileTypeExts: '*.jpg;*.jpeg;*.png;*.JPG;*.JPEG;*.PNG'
+    }).on('uploader:uploadSuccess', function(event, f, r) {
+        var fdata = JSON.parse(r).Filedata;
+        var sImgKey = fdata.sKey;
+        var sExt = fdata.sExt;
+        $("#").html(sImgKey + '.' + sExt);
+        //编辑添加时保存图片值
+        self.$sImgKey.text(sImgKey);
+        self.$sImgExt.text(sExt);
+        var imgURL = '<img src="' + pageConfig.showImgDomain + '/' + sImgKey + '.' + sExt + '" />';
+        $("#").html(imgURL);
+    });
+```
+
 ###注意
 
 如果上传时需要跨域，需要服务器端自行在webroot根目录下添加crossdomain.xml文件：

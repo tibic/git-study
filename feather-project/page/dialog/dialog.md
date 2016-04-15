@@ -178,8 +178,4 @@ $('#dialog4').dialog({
 	});
 
 	$('#dialog4').dialog('instance').load('url');
-<<<<<<< HEAD
 ```
-=======
-```
->>>>>>> fbb36ca0d016ef66a23a11fd74894470789f3650
